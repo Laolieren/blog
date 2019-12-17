@@ -1,0 +1,435 @@
+.container-fluid {
+    padding: 0;
+}
+#aboutMe {
+    opacity: 0;
+}
+
+.section1 {
+    background: url("/static/images/bgc1.jpg") no-repeat center/100% 100%;
+    text-align: center;
+    font: 50px "Microsoft Yahei";
+    color: #fff;
+    position: relative;
+}
+
+.section2 {
+    background: url("/static/images/bgc2.jpg") no-repeat center/100% 100%;
+    text-align: center;
+    font: 50px "Microsoft Yahei";
+    color: #fff;
+    position: relative;
+}
+
+.section3 {
+    background: url("/static/images/bgc3.jpg") no-repeat center/100% 100%;
+    text-align: center;
+    font: 50px "Microsoft Yahei";
+    color: #fff;
+    position: relative;
+}
+
+.section4 {
+    background: url("/static/images/bgc4.jpg") no-repeat center/100% 100%;
+    text-align: center;
+    font: 50px "Microsoft Yahei";
+    color: #fff;
+    position: relative;
+}
+
+.section5 {
+    background: url("/static/images/bgc5.jpg") no-repeat center/100% 100%;
+    text-align: center;
+    font: 50px "Microsoft Yahei";
+    color: #fff;
+    position: relative;
+}
+
+
+.goIndex {
+    display: block;
+    position: fixed;
+    right: 60px;
+    top: 100px;
+    z-index: 1000;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.goIndex img {
+    border-radius: 50%;
+    -webkit-animation: goindex 2s infinite alternate;
+    -o-animation: goindex 2s infinite alternate;
+    animation: goindex 2s infinite alternate;
+}
+
+@keyframes goindex {
+    from {
+        transform: scale(0.6)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.section1 .content1 {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section1.active .content1 {
+    -webkit-animation: zoomIn 1s forwards;
+    -o-animation: zoomIn 1s forwards;
+    animation: zoomIn 1s forwards;
+}
+
+.section1 .content1 p {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.section1 .content1 span {
+    font-size: 20px;
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
+
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes rollIn {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+        transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+.section2 > a {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 200px;
+}
+.section2 > a img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+.page2-title {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+
+}
+
+.infoBox {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section2 .icon-infomation {
+    display: inline-block;
+    width: 20%;
+    height: 240px;
+    padding: 40px;
+    position: relative;
+}
+.section2 .icon-infomation h6 {
+    font-size: 30px;
+}
+.section2 .icon-infomation a {
+    display: block;
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+}
+.section2 .icon-infomation img {
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+.section2 .icon-infomation p {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+.section2.active .icon-infomation:nth-of-type(1) {
+    -webkit-animation: bounceIn 2s ease;
+    animation: bounceIn 2s ease;
+}
+
+.section2.active .icon-infomation:nth-of-type(2) {
+    opacity: 0;
+    -webkit-animation: lightSpeedIn 2s ease forwards;
+    animation: lightSpeedIn 2s ease forwards;
+    -webkit-animation-delay: 1s;
+}
+
+.section2.active .icon-infomation:nth-of-type(3) {
+    opacity: 0;
+    -webkit-animation: rubberBand 2s ease forwards;
+    animation: rubberBand 2s ease forwards;
+    -webkit-animation-delay: 1.5s;
+}
+
+.section2.active .icon-infomation:nth-of-type(4) {
+    opacity: 0;
+    -webkit-animation: bounceInUp 2s ease forwards;
+    animation: bounceInUp 2s ease forwards;
+    -webkit-animation-delay: 2s;
+}
+
+.section2.active .page2-title {
+    display: inline-block;
+    -webkit-animation: zoomInDown 2s ease forwards;
+    animation: zoomInDown 2s ease forwards;
+}
+
+.section3 .img-3{
+    width: 10%;
+    min-width: 100px;
+    position: absolute;
+    left: 10%;
+}
+.section3 .img-3 img{
+    width: 100%;
+    display: block;
+}
+
+.section3 .img-3{
+    top: 70%;
+}
+
+.section3 .img-3 {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate3d(0, 0, 1, 60deg);
+    transform: rotate3d(0, 0, 1, 60deg);
+    -webkit-animation: hinge 2s ease infinite;
+    animation: hinge 2s ease infinite;
+}
+.section3 .skills span {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    color: #000000;
+    transform: scale(.5);
+}
+.subject-1{font-size: 48px; margin-left: -400px; margin-top: -50px;}
+.subject-2{font-size: 18px; margin-left: -250px; margin-top: 40px;}
+.subject-3{font-size: 14px; margin-left: -270px; margin-top: 10px;}
+.subject-4{font-size: 20px; margin-left: -200px; margin-top: -30px;}
+.subject-5{font-size: 20px; margin-left: -120px; margin-top: 50px;}
+.subject-6{font-size: 30px; margin-left: 81px; margin-top: -35px;}
+.subject-7{font-size: 16px; margin-left: 0; margin-top: -40px;}
+.subject-8{font-size: 20px; margin-left: 10px; margin-top: 10px;}
+.subject-9{font-size: 18px; margin-left: 2px; margin-top: 41px;}
+.subject-10{font-size: 18px; margin-left: -150px; margin-top: 10px;}
+
+.section3.active .skills span {
+    animation: bounceIn 2s linear infinite alternate;
+    -webkit-animation: bounceIn 2s linear infinite alternate;
+}
+
+.section3 .skill-introduce {
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    color: #000000;
+}
+.section3 .skill-introduce a{
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+.section3 .skill-introduce a img {
+    display: block;
+    width: 100%;
+}
+.skill-introduce .media-body .media-heading {
+    font-size: 30px;
+}
+.skill-introduce .media-body p{
+    font-size: 14px;
+    color: #000;
+    font-family: microsoft yahei, sans-serif;
+}
+.section3.active .skill-introduce .media {
+    margin-bottom: 20px;;
+}
+.section3.active .skill-introduce .media:nth-child(1) {
+    opacity: 0;
+    animation: bounceInLeft 2s linear forwards;
+    -webkit-animation: bounceInLeft 2s linear forwards;
+}
+.section3.active .skill-introduce .media:nth-child(2) {
+    opacity: 0;
+    animation: bounceInRight 2s linear forwards;
+    -webkit-animation: bounceInRight 2s linear forwards;
+    -webkit-animation-delay:1s ;
+}
+.section3.active .skill-introduce .media:nth-child(3) {
+    opacity: 0;
+    animation: bounceInDown 2s linear forwards;
+    -webkit-animation: bounceInDown 2s linear forwards;
+    -webkit-animation-delay: 2s;
+}
+.section4 .title {
+    margin-top: 270px;
+}
+.section4.active .title{
+    -webkit-animation: flipInY 4s linear ;
+    animation: flipInY 4s linear ;
+}
+
+.section4 .sign{
+    display: block;
+    margin-top: 20px;;
+    margin-bottom: 20px;
+    color: rgba(16, 16, 16, 0.98);
+    text-shadow: 1px 1px 1px red;
+}
+.section4.active .sign{
+    -webkit-animation: flip 2s linear ;
+    animation: flip 2s linear ;
+}
+.section4 .team-img {
+    width: 100px;
+    height: 100px;
+}
+.section4 .interestBox {
+    width: 80%;
+    margin: 200px auto 0;
+    display: flex;
+}
+.section4 .thumbnail {
+    display: block;
+    width: 25%;
+    background-color: transparent;
+    border:0;
+}
+
+.section4 .thumbnail .caption {
+    color: #000000;
+    padding: 9px;
+    font-family: inherit;
+}
+.section4 h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFF;
+}
+.section4 p {
+    margin-top: 15px;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.section4.active h3 {
+    -webkit-animation: rubberBand 2s infinite;
+    -o-animation: rubberBand 2s infinite;
+    animation: rubberBand 2s infinite;
+}
+.section4.active p {
+    -webkit-animation: rubberBand 2s infinite;
+    -o-animation: rubberBand 2s infinite;
+    animation: rubberBand 2s infinite;
+}
+.section4 .thumbnail .team-img {
+    border: 4px solid transparent;
+    -webkit-animation: team-img 3s linear infinite;
+    animation: team-img 3s linear infinite;
+}
+.section4 .thumbnail {
+    margin: 0;
+}
+@-webkit-keyframes team-img {
+    from{
+        border: 4px solid transparent;
+    }
+    50%{
+        border: 4px solid orangered;
+        opacity: 0.7;
+    }
+    to{
+        border: 4px solid transparent;
+    }
+}
+.section5 {
+    border: 1px solid #fffedf;
+}
+.section5 p {
+    color: #3c3c3c;
+    margin-top: 160px;
+}
+.section5.active p {
+    -webkit-animation: wobble 2s infinite;
+    -o-animation: wobble 2s infinite;
+    animation: wobble 2s infinite;
+}
+.section5 a:first-of-type {
+    position: absolute;
+    left: 22%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+}
+.section5.active a:first-of-type {
+    -webkit-animation: myFinger 1s infinite alternate;
+    -o-animation: myFinger 1s infinite alternate;
+    animation: myFinger 1s infinite alternate;
+}
+@keyframes myFinger {
+    from {transform: translate(0,-50%)}
+    to {transform: translate(80px,-50%)}
+}
+.section5 a:first-of-type img {
+    height: 100%;
+    width: 100%;
+}
+.section5 a:last-of-type {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>呆呆的老猎人</title>
+    <meta name="keywords" content="blog"/>
+    <meta name="description" content="blog"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="/static/lib/Swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="/static/lib/bootstrap-3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/comment.css">
+    <!--[if lt IE 9]>
+    <script src="/static/lib/html5shiv-3.7.3/html5shiv.min.js"></script>
+    <script src="/static/lib/Respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--头部导航栏-->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/static/index.html">呆呆的老猎人</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="myActive"><a href="/static/index.html">首页</a></li>
+                <li><a href="/static/bloglist.html">个人动态</a></li>
+                <li><a href="/static/collection.html">收藏网站</a></li>
+                <li><a href="/static/mynote.html">学习笔记</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="nologin" style="display: block"><a href="/static/login.html" style="cursor: pointer">站长登录</a></li>
+                <li id="hadlogin" style="display: none"><a style="cursor: pointer">登出</a></li>
+                <li><a href="/static/aboutme.html">关于我</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--轮播图区域-->
+<section id="showbanner">
+    <div class="container banbox">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-6">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#"><img src="/static/images/1.jpg" width="100%"
+                                                                   height="100%"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="/static/images/2.jpg" width="100%"
+                                                                   height="100%"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="/static/images/3.jpg" width="100%"
+                                                                   height="100%"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="/static/images/4.jpg" width="100%"
+                                                                   height="100%"></a></div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+
+                </div>
+            </div>
+            <div class="col-md-3 hidden-sm col-xs-6 headline">
+                <ul>
+                    <li><a href="#" title="我是法兰街舞队的一员，我浸淫于街舞无法自拔"><img src="/static/images/h1.png"
+                                                                       alt="我是法兰街舞队的一员，我浸淫于街舞无法自拔"><span>我是法兰街舞队的一员，我浸淫于街舞无法自拔</span></a>
+                    </li>
+                    <li><a href="#" title="我要去赶着去传火了"><img src="/static/images/h2.jpg"
+                                                           alt="我要去赶着去传火了"><span>我要去赶着去传火了</span></a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 hidden-sm hidden-xs">
+                <div class="card">
+                    <h2>我的名片</h2>
+                    <p>网名：呆呆的老猎人</p>
+                    <p>职业：Web前端设计师、网页设计</p>
+                    <p>现居：湖北省武汉市</p>
+                    <p>Email：1067929647@qq.com</p>
+                    <ul class="linkmore clearfix">
+                        <li><a href="#" class="iconfont icon-zhuye" title="网站地址"></a></li>
+                        <li><a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=1067929647@qq.com"
+                               class="iconfont icon-youxiang" title="我的邮箱"></a></li>
+                        <li><a href="http://wpa.qq.com/msgrd?v=3&uin=1067929647&site=qq&menu=yes"
+                               class="iconfont icon---" title="QQ联系我"></a></li>
+                        <li id="weixin"><a href="#" class="iconfont icon-weixin"
+                                           title="关注我的微信"></a><i><img src="/static/images/wx.png"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--个人日记区域-->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-sm-12 col-xs-12 myleft">
+                <div class="diary">
+                    <ul id="myTab" class="nav nav-tabs">
+                        <li class="active"><a href="#daily" data-toggle="tab">黑暗之魂3</a></li>
+                        <li><a href="#summarize" data-toggle="tab">黑暗之魂重制版</a></li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade in active" id="daily">
+                            <div class="newspic">
+                                <ul>
+                                    <li><a href="#"><img src="/static/images/3.jpg"><span>灰心哥别灰心</span></a></li>
+                                    <li><a href="#"><img src="/static/images/1.jpg"><span>防火女小姐姐好漂亮</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="newslist">
+                                <li class="showActive"><a href="#">法兰的不死队</a>
+                                    <p>主要肛深渊的，深渊骑士的‘粉丝’。只要有一点深渊的预兆，灭了一个国家都在所不惜。劝退哥就是其中的一名</p>
+                                </li>
+                                <li><a href="#">孤独的王者-巨人尤姆</a>
+                                    <p>二代的ATM机让我们印象深刻，三代以为要翻身，谁知道召唤几名太阳骑士，暴风大剑打得尤姆抬不起头，可惜不能添火，否则ATM机又能响彻魂界</p>
+                                </li>
+                                <li><a href="#">深邃圣者埃尔德里奇</a>
+                                    <p>
+                                        最恶心的薪王，以前是个圣职，却喜欢吃人，尤其他带的戒指还表明他喜欢倾听被吃人的恐惧呐喊（变态）最后吃成了泥巴（黑魂漫画有埃尔德里奇人形状态光头吴克）未知原因献出了自己的第一次传火，难道是为了品尝传火的味道？</p>
+                                </li>
+                                <li><a href="#">罗斯里克的王子</a>
+                                    <p>钟声响起因为什么？就是这货不去传火，还把自己锁在大书库，和自己的哥哥同睡一床……。</p>
+                                </li>
+                                <li><a href="#">放逐者鲁道斯</a>
+                                    <p>
+                                        个薪王我我猜不透，能力是炼魂，挺吊的，还跟防火女有一腿，从头到尾都在畅谈我是薪王，我应该在这里，我不会走的，这是我的王位一类的话，当你前期击杀他之后传回来，他会在梦中说传火真难受，难受的要他的命，他的话语给人感觉就是再也不传火了，而且毫无威严。</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="summarize">
+                            <div class="newspic">
+                                <ul>
+                                    <li><a href="#"><img src="/static/images/2.jpg"><span>看什么看，亮瞎你的钛合金dog眼</span></a></li>
+                                    <li><a href="#"><img src="/static/images/4.jpg"><span>我要当黑暗之王，传你妹的火</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="newslist">
+                                <li class="showActive"><a href="#">墓王尼特</a>
+                                    <p>
+                                        墓王尼特不仅率领着一支骷髅军团，就连他的本体也是一堆围绕在巨大骨架周围的枯骨。他居住在巨人之墓的底部，手里挥动着骸骨组成的墓王剑。他的其中一个动作就是高声尖叫。我们都很喜欢这位最初的死（si）者（zhai）。</p>
+                                </li>
+                                <li><a href="#">小隆德四王</a>
+                                    <p>
+                                        小隆德四王能在你进入Boss房之前就把你给干掉（如果那片区域能称作房间的话……）。这场在深渊中进行的恐怖战斗，会给有一种陷入无尽黑暗的感觉，而Boss们则会在你的身边不停地游荡。小隆德遗迹这个区域也非常刺激，其间四处都是断壁残垣和尖叫的鬼魂。</p>
+                                </li>
+                                <li><a href="#">乌薪王葛温</a>
+                                    <p>
+                                        游戏中的最后一个Boss往往让人印象深刻，与之相伴的高质量战斗则会让他变得更加经典。在经历了无数的战斗、死亡和磨练之后，玩家终于来到了乌薪王葛温的面前，相信这个瞬间会牢牢地烙印在每位《黑魂》粉丝的心里。当你意识到自己将要亲手打到这位伟大的王者时，心情或许也会像此处的钢琴曲一样忧伤吧。</p>
+                                </li>
+                                <li><a href="#">骑士亚尔特留斯</a>
+                                    <p>
+                                        我们真的必须亲手终结这位强大无比，却又充满了悲剧色彩的对手吗？没错，这就是《黑暗之魂》的魅力。当然了，这场战斗背后还有着许多更加深刻的内容。亚尔特留斯的Boss战不仅充满了难度，同时也拯救了这位传奇骑士的荣耀，解放了他被深渊吞噬的灵魂。毕竟他曾为了击败深渊而付出了自己的一切。</p>
+                                </li>
+                                <li><a href="#">猎龙者翁斯坦和刽子手斯摩</a>
+                                    <p>
+                                        翁斯坦和斯摩是一对传奇搭档，他们一同带来了《黑暗之魂》系列中最为标志性的Boss战。两人的攻击方式几乎完美互补——翁斯坦身着尖锐的铠甲，并有着闪电般的速度；体型庞大的斯摩则手持着大到夸张的巨锤。这场战斗发生在亚诺尔隆德的大厅里，Boss们随意的一挥就能把柱子打得粉碎。二者之间的形象也形成了奇异的反差：翁斯坦是一位充满荣耀的骑士，刽子手斯摩则疯狂而残忍，它甚至会为了力量把同伴给一锤子砸扁。</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 hidden-sm hidden-xs myright">
+                <div class="whitebg notice">
+                    <h2 class="htitle">公告</h2>
+                    <ul>
+                        <li><a href="#">本人就是随便写写，别当真</a></li>
+                        <li><a href="#">单人制作，不喜勿喷</a></li>
+                        <li><a href="#">每天都在迭(wan)代(shua)</a></li>
+                        <li><a href="#">此网站不以营利为目的</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--相册区域-->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-sm-12 col-xs-12 myleft">
+                <div class="myCollection whitebg">
+                    <h2 class="htitle">收藏网站</h2>
+                    <ul>
+                        <li><i class="pic"><a target="_blank" href="http://www.bootcss.com/"><img src="/static/images/bootstrop.jpg"></a></i><b>Bootstrap框架</b><span>简洁、直观、强悍的前端开发框架</span><a target="_blank" href=" http://www.bootcss.com/"
+                                                                                                            class="readmore">进入网站</a>
+                        </li>
+                        <li><i class="pic"><a target="_blank" href="http://dev.dcloud.net.cn/mui/"><img src="/static/images/mui.jpg"></a></i><b>MUI框架</b><span>最接近原生APP的高性能前端框架</span><a target="_blank" href="http://dev.dcloud.net.cn/mui/"
+                                                                                                            class="readmore">进入网站</a>
+                        </li>
+                        <li><i class="pic"><a target="_blank" href="https://cn.vuejs.org/"><img src="/static/images/vue.jpg"></a></i><b>vue框架</b><span>一套构建用户界面的渐进式框架</span><a target="_blank" href="https://cn.vuejs.org/"
+                                                                                                            class="readmore">进入网站</a>
+                        </li>
+                        <li><i class="pic"><a target="_blank" href="https://react.docschina.org/"><img src="/static/images/react.jpg"></a></i><b>react框架</b><span>用于构建用户界面的JavaScript库</span><a target="_blank" href="https://react.docschina.org/"
+                                                                                                            class="readmore">进入网站</a>
+                        </li>
+                        <li><i class="pic"><a target="_blank" href="https://www.swiper.com.cn/"><img src="/static/images/swiper.jpg"></a></i><b>swiper插件</b><span>开源、免费、强大的移动端滑动插件</span><a target="_blank" href="https://www.swiper.com.cn/"
+                                                                                                             class="readmore">进入网站</a>
+                        </li>
+                        <li><i class="pic"><a target="_blank" href="http://www.fontawesome.com.cn/"><img src="/static/images/FontAwesome.jpg"></a></i><b>FontAwesome框架</b><span>一套绝佳的图标字体库和CSS框架</span><a target="_blank" href="http://www.fontawesome.com.cn/"
+                                                                                                             class="readmore">进入网站</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 hidden-sm hidden-xs myright">
+                <div class="whitebg likelist">
+                    <h2 class="htitle">爱好</h2>
+                    <ul>
+                        <li class="likeimg"><a href="#"><img src="/static/images/11.jpg"></a></li>
+                        <li class="likeimg"><a href="#"><img src="/static/images/22.jpg"></a></li>
+                        <li class="likeimg"><a href="#"><img src="/static/images/33.jpg"></a></li>
+                        <li class="likeimg"><a href="#"><img src="/static/images/44.jpg"></a></li>
+                        <li class="likeimg"><a href="#"><img src="/static/images/55.jpg"></a></li>
+                        <li class="likeimg"><a href="#"><img src="/static/images/66.jpg"></a></li>
+                    </ul>
+                    <ul>
+                        <li class="liketext"><a href="#">我总觉得我自己可以参加中国好声音</a></li>
+                        <li class="liketext"><a href="#">小时候的水平可能会被选中成为后备羽毛球运动员</a></li>
+                        <li class="liketext"><a href="#">足球？一秒九颠，然后报废了</a></li>
+                        <li class="liketext"><a href="#">大学梦想一把吉他一首歌，现实是在码代码</a></li>
+                        <li class="liketext"><a href="#">篮筐高不可攀？看我看别人扣一个！</a></li>
+                        <li class="liketext"><a href="#">请游戏来蹂躏我吧</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--动态-->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-sm-12 col-xs-12 myleft">
+                <div class="ad whitebg"> <img src="/static/images/aaa.jpg"> </div>
+                <div class="whitebg bloglist">
+                    <h2 class="htitle">最新动态</h2>
+                    <ul class="live-list">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 hidden-sm hidden-xs myright">
+                <div class="whitebg wenzi">
+                    <h2 class="htitle">我的关注</h2>
+                    <ul>
+                        <li><a target="_blank" href="https://www.gamersky.com/handbook/201810/1116129.shtml">《黑暗之魂重制版》十大经典BOSS战盘点
+                            人气BOSS排行</a></li>
+                        <li><a target="_blank" href="https://www.gamersky.com/handbook/201702/866115.shtml">《黑暗之魂3》全BOSS评价与剧情背景详解</a>
+                        </li>
+                        <li><a target="_blank"
+                               href="https://www.bilibili.com/video/av40452136?from=search&seid=1210052268197223544">【学徒】黑暗之魂3地毯式攻略解说（本体+全DLC高清合集）</a>
+                        </li>
+                        <li><a target="_blank"
+                               href="https://www.bilibili.com/video/av24682730?from=search&seid=1210052268197223544">【学徒】黑暗之魂1重制版地毯式攻略解说合集（完结）</a>
+                        </li>
+                        <li><a target="_blank" href="https://www.douyu.com/71415">我关注的主播猴王寅子</a></li>
+                        <li><a target="_blank" href="https://www.douyu.com/84452">我关注的主播傻子飞</a></li>
+                        <li><a target="_blank"
+                               href="https://space.bilibili.com/546195?from=search&seid=13950145764251034578">b站我喜欢的up主老番茄</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="whitebg tuijian">
+                    <h2 class="htitle">游戏推荐</h2>
+                    <ul>
+                        <li><a href="https://www.gamersky.com/z/nba2k19/" target="_blank"><i><img
+                                src="/static/images/nba2k19.jpg"
+                                title="《NBA 2K19》是2K开发的《NBA 2K》系列。随着该系列一年年走过来，厂商的游戏画面表现力和物理效果处理的的越来越好，力求让玩家在游戏中获得更好的游戏体验"></i>
+                            <p>《NBA 2K19》是2K开发的《NBA 2K》系列。随着该系列一年年走过来，厂商的游戏画面表现力和物理效果处理的的越来越好，力求让玩家在游戏中获得更好的游戏体验</p>
+                        </a></li>
+                        <li><a href="https://www.gamersky.com/z/gta5/" target="_blank"><i><img src="/static/images/gta.jpg"
+                                                                                               title="你想要拥有一个属于你自己的世界么？你想让你的思想为所以为么？你想拥有豪车无数，只要想开就能开么？这些统统不是梦，在这里，你只需做到充分想像并且去做，因为，这里就是GTA5，一个属于你自己的世界。"></i>
+                            <p>
+                                你想要拥有一个属于你自己的世界么？你想让你的思想为所以为么？你想拥有豪车无数，只要想开就能开么？这些统统不是梦，在这里，你只需做到充分想像并且去做，因为，这里就是GTA5，一个属于你自己的世界。</p>
+                        </a></li>
+                        <li><a href="https://www.gamersky.com/z/mhworld/" target="_blank"><i><img
+                                src="/static/images/monster.jpg"
+                                title="在《怪物猎人：世界》中，你承担了一个猎人的角色，冒险进入一个全新的大陆，在那里你可以追踪并杀死凶猛的怪物。这片新的土地和不同的居民在每个任务中都扮演着重要的角色，玩家必须有策略地利用周围的环境，包括地形、植被和野生动物，从而在战斗中获得优势。作为猎人，你必须用你灵活的头脑和专业的猎人知识在激烈的、不断演变的战斗中追踪你的目标。"></i>
+                            <p>
+                                在《怪物猎人：世界》中，你承担了一个猎人的角色，冒险进入一个全新的大陆，在那里你可以追踪并杀死凶猛的怪物。这片新的土地和不同的居民在每个任务中都扮演着重要的角色，玩家必须有策略地利用周围的环境，包括地形、植被和野生动物，从而在战斗中获得优势。作为猎人，你必须用你灵活的头脑和专业的猎人知识在激烈的、不断演变的战斗中追踪你的目标。</p>
+                        </a></li>
+                        <li><a href="https://www.gamersky.com/z/zeldabotw/" target="_blank"><i><img
+                                src="/static/images/zelda.jpeg"
+                                title="《塞尔达传说》是对游戏界影响最大的游戏系列作品之一。在几乎所有从事游戏开发的人眼中，尤其是欧美游戏人严重，塞尔达就是他们的教科书"></i>
+                            <p>《塞尔达传说》是对游戏界影响最大的游戏系列作品之一。在几乎所有从事游戏开发的人眼中，尤其是欧美游戏人严重，塞尔达就是他们的教科书</p>
+                        </a></li>
+                        <li><a href="https://www.gamersky.com/z/darksouls/" target="_blank"><i><img
+                                src="/static/images/dark1.jpg"
+                                title="爽快突突突几乎统治了整个游戏界，黑暗之魂能让被惯坏了的玩家们再次喜欢上挑战极限的玩法实属不易。从这个意义上来说，即使不提细节，本作也已经可以封神。"></i>
+                            <p>爽快突突突几乎统治了整个游戏界，黑暗之魂能让被惯坏了的玩家们再次喜欢上挑战极限的玩法实属不易。从这个意义上来说，即使不提细节，本作也已经可以封神。</p>
+                        </a></li>
+                        <li><a href="https://www.gamersky.com/z/darksouls3/" target="_blank"><i><img
+                                src="/static/images/dark3.jpg"
+                                title="不论是讲述一段惊心动魄、扣人心弦的故事，还是让培养的角色慢慢走上人生巅峰，当前大多数游戏都着眼于给玩家提供最直接的快乐。但《黑魂3》却把快乐包裹在了层层痛苦之中，细心品味下去往往能屡败屡战、越战越勇，最终获得前所未有的成就感和满足感。"></i>
+                            <p>
+                                不论是讲述一段惊心动魄、扣人心弦的故事，还是让培养的角色慢慢走上人生巅峰，当前大多数游戏都着眼于给玩家提供最直接的快乐。但《黑魂3》却把快乐包裹在了层层痛苦之中，细心品味下去往往能屡败屡战、越战越勇，最终获得前所未有的成就感和满足感。</p>
+                        </a></li>
+                        <li><a href="https://www.gamersky.com/z/rdr2/" target="_blank"><i><img src="/static/images/redDead.jpg"
+                                                                                               title="IGN认为这是最真实、最开放的世界，在这里，有那么多人去认识，有那么多事情要做，有那么多地方要探索。即使在长达60个小时的主线剧情的最后阶段，仍然还有很多地方没有去过，这个世界始终都有能发现新乐趣的地方。《荒野大镖客：救赎2》是一款极其罕见的游戏，精心打磨的开发世界颂歌，献给那个亡命之徒的时代。"></i>
+                            <p>
+                                IGN认为这是最真实、最开放的世界，在这里，有那么多人去认识，有那么多事情要做，有那么多地方要探索。即使在长达60个小时的主线剧情的最后阶段，仍然还有很多地方没有去过，这个世界始终都有能发现新乐趣的地方。《荒野大镖客：救赎2》是一款极其罕见的游戏，精心打磨的开发世界颂歌，献给那个亡命之徒的时代。</p>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="whitebg tongji">
+                    <h2 class="htitle">站点信息</h2>
+                    <ul>
+                        <li><b>建站时间</b>：2019-2-22</li>
+                        <li><b>网站所属</b>：呆呆的老猎人</li>
+                        <li><b>建站目的</b>：纯属娱乐</li>
+                        <li><b>微信号</b>：扫描二维码，关注我吧</li>
+                        <img src="/static/images/wx.png" class="tongji_gzh">
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="wxbox">
+            <ul>
+                <li><img src="/static/images/wx.png"></li>
+            </ul>
+        </div>
+        <div class="endnav">
+            <p><b>站点声明：</b></p>
+            <p>1、本站个人博客，均为呆呆的老猎人本人设计，个人可以使用，未经许可不得用于任何商业目的。</p>
+            <p>2、所有文章未经授权禁止转载、摘编、复制或建立镜像，如有违反，追究法律责任。举报邮箱：<a
+                    href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=1067929647@qq.com">laolieren@qq.com</a>
+        </div>
+    </div>
+    <a href="#">
+        <div class="top"></div>
+    </a></footer>
+<script id="live-list-tmpl" type="text/html">
+    {{each lives as live}}
+    <li>
+        <h3 class="blogtitle"><a href="#">{{live.title}}</a></h3>
+        <p class="blogtext">{{live.content}}</p>
+        <p class="bloginfo"><i class="avatar"><img
+                src="/static/images/avatar.jpg"></i><span>呆呆的老猎人</span><span>{{live.ctime}}</span></span>
+        </p>
+    </li>
+    {{/each}}
+</script>
+<script src="/static/lib/jquery-2.1.4/jquery.min.js"></script>
+<script src="/static/lib/Swiper/js/swiper.min.js"></script>
+<script src="/static/lib/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+<script src="/static/lib/template/template.js"></script>
+<script src="/static/js/comment.js"></script>
+<script src="/static/js/index.js"></script>
+</body>
+</html>
