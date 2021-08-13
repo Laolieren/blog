@@ -8,7 +8,7 @@ class Config(object):
     SECRET_KEY = "as324-=dsg*F(sadgF*D(Sagsdfhdos"
 
     # 数据库的配置信息 mysql
-    SQLALCHEMY_DATABASE_URI = "mysql://root:Han19950920@127.0.0.1:3306/myblog"
+    SQLALCHEMY_DATABASE_URI = "mysql://root:"""数据库密码"""@127.0.0.1:3306/myblog"
     SQLALCHEMY_TRACK_MODIFICATIONS = True
 
     # redis
